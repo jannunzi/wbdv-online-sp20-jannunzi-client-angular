@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'wbdv-online-sp20-jannunzi-client-angular';
+  title = 'Hello From Component';
+  students = [
+    'Alice', 'Bob', 'Charlie'
+  ];
+  faculty = [
+    {username: 'ada', first: 'Ada'},
+    {username: 'tlee', first: 'Tim'}
+  ];
 }
