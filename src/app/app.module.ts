@@ -9,13 +9,18 @@ import {FormsModule} from '@angular/forms';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import {ModuleServiceClient} from './services/ModuleServiceClient';
+import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
+import {LessonServiceClient} from './services/LessonServiceClient';
+import { TopicPillsComponent } from './topic-pills/topic-pills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseListComponent,
     CourseViewerComponent,
-    ModuleListComponent
+    ModuleListComponent,
+    LessonTabsComponent,
+    TopicPillsComponent
   ],
   imports: [
     FormsModule,
@@ -24,7 +29,8 @@ import {ModuleServiceClient} from './services/ModuleServiceClient';
   ],
   providers: [
     CourseServiceClient,
-    ModuleServiceClient
+    ModuleServiceClient,
+    LessonServiceClient
   ],
   bootstrap: [AppComponent]
 })

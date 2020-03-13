@@ -1,0 +1,9 @@
+<h3>Topics</h3>
+<ul class="list-group">
+  <li class="list-group-item"
+      *ngFor="let topic of topics">
+    <a href="/course-viewer/{{courseId}}/modules/{{moduleId}}/lessons/{{lessonId}}/topics/{{topic._id}}">
+      {{topic.title}}
+    </a>
+  </li>
+</ul>

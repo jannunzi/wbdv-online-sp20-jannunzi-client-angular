@@ -1,3 +1,14 @@
+<a href="">
+  Back
+</a>
 <h2>Course Viewer</h2>
 <h3>{{course.title}}</h3>
-<app-module-list></app-module-list>
+<div class="row">
+  <div class="col-3">
+    <app-module-list></app-module-list>
+  </div>
+  <div class="col-9">
+    <app-lesson-tabs></app-lesson-tabs>
+    <app-topic-pills></app-topic-pills>
+  </div>
+</div>
