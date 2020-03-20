@@ -1,0 +1,9 @@
+<h1>Quizzes</h1>
+
+<ul>
+  <li *ngFor="let quiz of quizzes">
+    <a routerLink="/quizzes/{{quiz._id}}">
+      {{quiz.title}}
+    </a>
+  </li>
+</ul>
