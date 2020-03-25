@@ -1,1 +1,24 @@
-{{question.title}}
+<h3>True or False {{question._id}}</h3>
+<h4>{{question.question}}</h4>
+<label>
+  <input
+    [(ngModel)]="answer"
+    type="radio"
+    value="TRUE"
+    name="{{question._id}}"/> Yes
+</label>
+<br/>
+<label>
+  <input
+    [(ngModel)]="answer"
+    type="radio"
+    value="FALSE"
+    name="{{question._id}}"/> No
+</label>
+<br/>
+Your answer: {{answer}}
+<br/>
+Correct answer: {{question.correct}}
+<br/>
+<span [hidden]="answer === question.correct">Wrong answer</span>
+<span [hidden]="answer !== question.correct">Right answer</span>

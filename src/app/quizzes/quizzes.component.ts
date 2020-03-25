@@ -16,4 +16,12 @@ export class QuizzesComponent implements OnInit {
       .then(quizzes => this.quizzes = quizzes)
   }
 
+  deleteQuiz = (quizDeleted) =>
+    this.service.deleteQuiz(quizDeleted._id)
+      .then(status => this.quizzes = this.quizzes.filter(quiz => quiz._id !== quizDeleted._id))
+
+  createQuiz = () =>
+    this.service.createQuiz()
+      .then(quiz => this.quizzes.push(quiz))
+
 }

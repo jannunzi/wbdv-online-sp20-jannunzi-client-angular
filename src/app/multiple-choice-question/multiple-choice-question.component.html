@@ -1,1 +1,12 @@
-{{question.title}}
+<h3>Multiple Choice</h3>
+<h4>What is your favorite color?</h4>
+
+<div *ngFor="let option of question.options">
+  <label>
+    <input [(ngModel)]="answer"
+           type="radio"
+           value="{{option}}"
+           name="{{question._id}}"/> {{option}}
+  </label>
+</div>
+Your answer: {{answer}}

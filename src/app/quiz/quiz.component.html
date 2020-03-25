@@ -3,6 +3,7 @@
 <ul>
   <li *ngFor="let question of questions"
       [ngSwitch]="question.type">
+    {{question.type}}
       <app-true-false-question
         [question]="question"
         *ngSwitchCase="'TRUE_FALSE'">

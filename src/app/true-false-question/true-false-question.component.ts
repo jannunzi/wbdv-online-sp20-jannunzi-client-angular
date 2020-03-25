@@ -9,6 +9,7 @@ export class TrueFalseQuestionComponent implements OnInit {
 
   @Input()
   question
+  answer = 'No answer yet'
   constructor() { }
 
   ngOnInit(): void {

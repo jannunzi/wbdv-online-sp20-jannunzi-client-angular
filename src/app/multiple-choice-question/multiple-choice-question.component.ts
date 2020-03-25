@@ -12,6 +12,8 @@ export class MultipleChoiceQuestionComponent implements OnInit {
   @Input()
   question
 
+  answer = 'No answer yet'
+
   ngOnInit(): void {
   }
 
