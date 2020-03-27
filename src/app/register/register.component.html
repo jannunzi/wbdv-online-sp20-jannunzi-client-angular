@@ -1,0 +1,13 @@
+<h1>Register</h1>
+<input placeholder="username"
+       [(ngModel)]="username"
+       class="form-control"/>
+<input placeholder="password"
+       [(ngModel)]="password"
+       type="password"
+       class="form-control"/>
+<button
+  (click)="register(username, password)"
+  class="btn btn-success btn-block">
+  Register
+</button>
