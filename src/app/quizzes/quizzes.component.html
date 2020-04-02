@@ -8,6 +8,13 @@
     <a [class]="{'active': true}" routerLink="/quizzes/{{quiz._id}}">
       {{quiz.title}}
     </a>
+    <br/>
+    {{quiz.attempts.length}}
+    <ul>
+      <li *ngFor="let attempt of quiz.attempts">
+        {{attempt.score}}%
+      </li>
+    </ul>
   </li>
 </ul>
 

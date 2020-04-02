@@ -22,3 +22,8 @@ Correct answer: {{question.correct}}
 <br/>
 <span [hidden]="answer === question.correct">Wrong answer</span>
 <span [hidden]="answer !== question.correct">Right answer</span>
+<br/>
+
+<button (click)="submitAnswer()">
+  Submit Answer
+</button>

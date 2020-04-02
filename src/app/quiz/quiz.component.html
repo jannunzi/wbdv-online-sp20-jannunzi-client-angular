@@ -6,11 +6,16 @@
     {{question.type}}
       <app-true-false-question
         [question]="question"
+        [(answer)]="question.answer"
         *ngSwitchCase="'TRUE_FALSE'">
       </app-true-false-question>
       <app-multiple-choice-question
         [question]="question"
+        [(answer)]="question.answer"
         *ngSwitchCase="'MULTIPLE_CHOICE'">
       </app-multiple-choice-question>
   </li>
 </ul>
+<button (click)="submitQuiz()">
+  Submit Quiz
+</button>
